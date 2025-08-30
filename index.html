@@ -3,26 +3,23 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
-  <img class="avatar" src="/assets/avatar.jpg" alt="Avatar" />
-  <h1>Hi, I’m {{ site.title | escape }}</h1>
-  <p>I build things for the web and write about what I’m learning.</p>
-  <p class="links">
-    <a class="button" href="/about/">About</a>
-    <a class="button ghost" href="/blog/">Blog</a>
-  </p>
-</section>
+<h1>About Me</h1>
+<p>
+  Hello! I’m Karina Makhani. I'm a student earning my B.S. in
+  <a href="https://engineering.lehigh.edu/cse/academics/undergraduate/computer-science-business-bs" target="_blank" 
+  rel="noopener">Computer Science and Business</a> at Lehigh University. At Lehigh, I'm a developer 
+  working on <a href="https://wordpress.lehigh.edu/intractb/" target="_blank" rel="noopener">TrackTB</a>, a platform that
+  improves tuberculosis adherence in the Phillipines, and on <a herf="https://creativeinquiry.lehigh.edu/impactfellowships/campus-sustainable-impact-fellowship/leveling-lehigh-life-using-video-games-decrease-anxiety-during-transition-college" 
+  target="_blank" rel="noopener">Leveling Up to Lehigh Life</a>, a video game designed to help new students acclimate 
+  to Lehigh's campus and culture before getting to campus.
+</p>
+<p>
+  Outside of school, I've spent my last three summers at Amazon, working on various teams and projects. Most recently, I worked on
+  <a href="https://techcrunch.com/2024/10/09/amazon-debuts-ai-powered-shopping-guides/" target="_blank" 
+  rel="noopener">Shopping Guides</a>.
+</p>
 
-<section>
-  <h2>Recent writing</h2>
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </time>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+<h2>News</h2>
+<ul>
+  <li><strong>Aug 2025</strong> — Finished up my internship at Amazon Personalization.</li>
+</ul>

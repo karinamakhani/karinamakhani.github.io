@@ -1,16 +1,19 @@
 title: Karina Makhani
-description: Personal site & blog
+description: Personal site
 url: https://karinamakhani.github.io
-theme: null
 
-permalink: /blog/:title/
+author:
+  name: Karina Makhani
+  tagline: CS & Business @ Lehigh University, Software Engineer @ Amazon
+  details: 
+  #avatar: /assets/avatar.jpg 
+  links:
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/karinamakhani
+    - label: GitHub
+      url: https://github.com/karinamakhani
+
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
-
-# Optional social (shows up in footer)
-author:
-  name: Karina Makhani
-  github: karinamakhani
-  email: you@example.com
