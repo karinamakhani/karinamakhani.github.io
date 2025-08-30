@@ -1,0 +1,28 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <img class="avatar" src="/assets/avatar.jpg" alt="Avatar" />
+  <h1>Hi, I’m {{ site.title | escape }}</h1>
+  <p>I build things for the web and write about what I’m learning.</p>
+  <p class="links">
+    <a class="button" href="/about/">About</a>
+    <a class="button ghost" href="/blog/">Blog</a>
+  </p>
+</section>
+
+<section>
+  <h2>Recent writing</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </time>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

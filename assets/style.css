@@ -1,0 +1,77 @@
+/* ---- quick theme knobs ---- */
+:root{
+    --bg: #0e0f13;         /* dark background, change to #ffffff for light */
+    --text: #e6e7ee;
+    --muted: #9aa0ac;
+    --card: #161821;
+    --accent: #7c5cff;     /* change this for a different vibe */
+    --maxw: 850px;
+    --radius: 16px;
+  }
+  
+  /* ---- base ---- */
+  * { box-sizing: border-box }
+  html,body { margin:0; padding:0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: var(--maxw); margin: 0 auto; padding: 2rem 1rem; }
+  
+  /* ---- header ---- */
+  .site-header {
+    display:flex; justify-content:space-between; align-items:center;
+    padding: .9rem 1rem; position: sticky; top:0; backdrop-filter: blur(6px);
+    background: color-mix(in oklab, var(--bg) 80%, transparent);
+    border-bottom: 1px solid color-mix(in oklab, var(--text) 12%, transparent);
+  }
+  .brand { font-weight:700; letter-spacing:.2px; }
+  .site-header nav a { margin-left: 1rem; color: var(--text); opacity:.85 }
+  .site-header nav a:hover { opacity: 1 }
+  
+  /* ---- hero ---- */
+  .hero {
+    background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 12%, transparent), transparent 55%);
+    padding: 3rem 1rem; text-align:center; border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  }
+  .hero .avatar {
+    width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;
+    border: 2px solid color-mix(in oklab, var(--accent) 60%, white);
+  }
+  .hero h1 { margin:.2rem 0 .4rem; letter-spacing:.2px }
+  .hero .links { margin-top: 1rem }
+  .button {
+    display:inline-block; padding:.6rem 1rem; border-radius:.8rem; background: var(--accent);
+    color:#fff; font-weight:600; margin:.2rem; border: 1px solid transparent;
+  }
+  .button.ghost { background: transparent; color: var(--accent); border-color: var(--accent); }
+  
+  /* ---- post list ---- */
+  .post-list { list-style:none; padding:0; margin: 1rem 0 0 }
+  .post-list li {
+    display:flex; justify-content:space-between; gap: 1rem; padding: .8rem 1rem;
+    background: var(--card); border-radius: .9rem; margin-bottom:.6rem;
+    border: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+  }
+  .post-list.big li { align-items:flex-start; flex-direction: column; }
+  .post-list time { color: var(--muted); font-size:.9rem }
+  
+  /* ---- footer ---- */
+  .site-footer {
+    border-top: 1px solid color-mix(in oklab, var(--text) 12%, transparent);
+    padding: 2rem 1rem; text-align:center; color: var(--muted);
+  }
+  
+  /* ---- light mode if your OS prefers it ---- */
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#ffffff; --text:#1a1b20; --muted:#5c6270; --card:#f5f6fb;
+    }
+    .site-header{ background: rgba(255,255,255,.7) }
+  }
+  

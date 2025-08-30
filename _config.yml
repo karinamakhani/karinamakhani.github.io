@@ -1,0 +1,16 @@
+title: Karina Makhani
+description: Personal site & blog
+url: https://karinamakhani.github.io
+theme: null
+
+permalink: /blog/:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Optional social (shows up in footer)
+author:
+  name: Karina Makhani
+  github: karinamakhani
+  email: you@example.com
