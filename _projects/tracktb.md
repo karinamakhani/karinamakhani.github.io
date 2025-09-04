@@ -17,10 +17,4 @@ Here's a video demonstrating the pateint onboarding processs:
   Your browser does not support the video tag.
 </video>
 
-And here's a walkthrough of the doctor portal: 
-<video width="500" controls>
-  <source src="/images/patientonboarding.mov" type="video/mov">
-  Your browser does not support the video tag.
-</video>
-
 
