@@ -1,0 +1,40 @@
+
+<div class="cards">
+  <article class="card">
+    <h3><a href="#">Shopping Guides Categorization</a></h3>
+    <p>Using LLMs, embeddings and Louvain's algorithm to group Shopping Guides for display on Homepage.</p>
+    <div class="tags">Amazon</div>
+  </article>
+  <article class="card">
+    <h3><a href="#">TrackTB</a></h3>
+    <p>Using low-tech phones and messaging platforms to connect patients, caregivers, and clinicians and promote tuberculosis treatment adherence in the Phillipines.</p> 
+    <div class="tags">Projects</div>
+  </article>
+  <article class="card">
+    <h3><a href="#">Leveling Up to Lehigh Life</a></h3>
+    <p>Collaborated on Lehigh’s pre-arrival onboarding game to help 1,500+ new students adjust before arriving on campus.</p>
+    <div class="tags">Projects</div>
+  </article>
+  <article class="card">
+    <h3><a href="#">Shopping Funnel: F0</a></h3>
+    <p>Defined purchase-intent signals (repeat visits, high-intent searches) and framed model to predict purchase within 2 clicks. </p>
+    <div class="tags">Amazon</div>
+  </article>
+  <article class="card">
+    <h3><a href="#">CSE 216</a></h3>
+    <p>Collaborated in a team-based software engineering project to design, implement, and deploy a full-stack web application using agile methodologies.</p>
+    <div class="tags">Classwork</div>
+  </article>
+  <article class="card">
+    <h3><a href="#">PiggyBank Pal$</a></h3>
+    <p>Developed a Duolingo-style web app for personal finance, designed specifically for middle school students.</p>
+    <div class="tags">Classwork</div>
+  </article>
+  <article class="card">
+    <h3><a href="#">Startup Analysis: Lefeet</a></h3>
+    <p>Conducted analysis on the kickstarter campaign for <a herf="https://lefeet.com/?srsltid=AfmBOorBk5nv0uh9VJ0uQHVyKmfFgAlUuXDmayfR8ZQd5X7T2nHBrOXD" target="_blank" rel="noopener">Lefeet</a>, developing a new market strategy for the innovative water scooter.</p>
+    <div class="tags">Classwork</div>
+  </article>
+
+
+</div>

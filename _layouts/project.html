@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}">Karina Makhani</a>
+    <nav class="main-nav">
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/blog/'     | relative_url }}">Blog</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="project-page">
+      <nav class="crumbs"><a href="{{ '/projects/' | relative_url }}">Projects</a> » {{ page.title }}</nav>
+      <h1 class="project-title">{{ page.title }}</h1>
+      {% if page.meta %}<p class="project-meta">{{ page.meta }}</p>{% endif %}
+      {% if page.links %}
+        <p class="project-links">
+          {% for l in page.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+        </p>
+      {% endif %}
+      <div class="project-content">
+        {{ content }}
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">© {{ site.time | date: "%Y" }} {{ site.title }} · built with GitHub Pages</footer>
+</body>
+</html>

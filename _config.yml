@@ -1,12 +1,14 @@
 title: Karina Makhani
 description: Personal site
 url: https://karinamakhani.github.io
+baseurl: ""                           
+repository: karinamakhani/karinamakhani.github.io
 
 author:
   name: Karina Makhani
   tagline: CS & Business @ Lehigh University, Software Engineer @ Amazon
   details: 
-  #avatar: /assets/avatar.jpg 
+  avatar: /images/mecrop.jpeg 
   links:
     - label: LinkedIn
       url: https://www.linkedin.com/in/karinamakhani
@@ -17,3 +19,15 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project      
