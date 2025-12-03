@@ -7,7 +7,7 @@ I’m a CS student focused on health tech and data-intensive systems. Most of my
 
 ## Sections
 - `index.html` – landing page
-- `projects.md` – project writeups
+- `proj.txt` – project writeups
 - `blog.html` – (future) technical writing
 
 ## Note on Code Samples
