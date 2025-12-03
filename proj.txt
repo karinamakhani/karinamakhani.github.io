@@ -25,16 +25,7 @@
     <p>Collaborated in a team-based software engineering project to design, implement, and deploy a full-stack web application using agile methodologies.</p>
     <div class="tags">Classwork</div>
   </article>
-  <article class="card">
-    <h3><a href="#">PiggyBank Pal$</a></h3>
-    <p>Developed a Duolingo-style web app for personal finance, designed specifically for middle school students.</p>
-    <div class="tags">Classwork</div>
-  </article>
-  <article class="card">
-    <h3><a href="#">Startup Analysis: Lefeet</a></h3>
-    <p>Conducted analysis on the kickstarter campaign for <a herf="https://lefeet.com/?srsltid=AfmBOorBk5nv0uh9VJ0uQHVyKmfFgAlUuXDmayfR8ZQd5X7T2nHBrOXD" target="_blank" rel="noopener">Lefeet</a>, developing a new market strategy for the innovative water scooter.</p>
-    <div class="tags">Classwork</div>
-  </article>
+
 
 
 </div>
